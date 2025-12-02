@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Smart Scheduler",
+  "version": "1.0.0",
+  "description": "AI-powered scheduling assistant for Google Calendar and Tasks",
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "Smart Scheduler",
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  },
+  "permissions": ["storage", "identity"],
+  "host_permissions": [
+    "http://localhost:5000/*",
+    "https://www.googleapis.com/*"
+  ],
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  }
+}
